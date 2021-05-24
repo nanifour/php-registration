@@ -1,17 +1,5 @@
-  <!-- Included Files -->
-  <?php include("header.php"); ?>
 
-<?php  
-//show session message
-if (isset($_SESSION['message'])){
-	echo  $_SESSION['message']; 
-  }
-//clear session message after
-  unset($_SESSION['message']);
-
-?>
-
-      <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html xmlns = "http://www.w3.org/1999/xhtml" lang = "en">
 
@@ -24,7 +12,9 @@ if (isset($_SESSION['message'])){
 
 </head>
 
-<body>
+<body>   
+<!-- Included Files -->
+<?php include("header.php"); ?>
 
   <div class="background">
 

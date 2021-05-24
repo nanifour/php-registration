@@ -42,6 +42,16 @@
 
 
   </div>
+  
+  <?php  
+//show session message
+if (isset($_SESSION['message'])){
+	echo  $_SESSION['message']; 
+  }
+//clear session message after
+  unset($_SESSION['message']);
+
+?>
 
 </body>
 
