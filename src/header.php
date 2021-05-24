@@ -9,39 +9,39 @@
   <link rel="stylesheet" type="text/css" href="style/std.css">
   <meta charset = "UTF-8" />
 
-
-  <nav>
-    <div class="nav-center">
-      <ul>
-          <li> <a href="logout_action.php"> Log Out </a> </li>
-          <li> <a href="index.php"> Log In </a> </li>
-          <li> <a href="events.php"> Events </a> </li>
-          <li> <a class="nav-link" href="registration.php"> Sign Up </a> </li>
-      </ul>
-    </div>
-  </nav>
-
-
 </head>
 
 <body>
-<?php
-//start session 
-//session_start();
-session_start();
 
-//check if logged in
-//show session message
-//$userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : 'Guest';
-if(isset($_SESSION['userid'])){
-  echo "<h3>Royal Pups Member </h3>";
-}
-else{
-  echo "<h3> Guest </h3>";
-}
-//<h3>Hello <?php echo $userid; </h3>
-?>
 
+<div class="menu-container">
+      <div class="left">
+          <?php
+          //start session 
+          session_start();
+
+          //check if logged in
+          //show session message
+          //$userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : 'Guest';
+          if(isset($_SESSION['userid'])){
+            echo "<h3>Hello Royal Pups Member 👋🏽</h3>";
+          }
+          else{
+            echo "<h3> Hello Guest 👋🏽</h3>";
+          }
+          ?>
+      </div>
+
+
+      <div class="nav-right">
+          <a href="events.php"> Events </a> 
+          <a href="index.php"> Log In </a> 
+          <a href="logout_action.php"> Log Out </a> 
+          <a class="nav-link" href="registration.php"> Sign Up </a> 
+      </div>
+
+
+  </div>
 
 </body>
 
