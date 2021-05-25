@@ -24,8 +24,8 @@
 
 					<form name="loginForm" method="POST" action="login_action.php">
 						<div class="login">
-							<label>User ID </label>
-								<input type="text" placeholder="Enter in your user ID.." name="userid" required/>
+							<label>Username </label>
+								<input type="text" placeholder="Enter in your username.." name="username" required/>
 						</div>
 						<div class="login">
 							<label>Password </label>
