@@ -20,4 +20,3 @@ create table [event]
     eventTime time
 );
 
-
