@@ -25,7 +25,7 @@ if ( empty($name) || ! preg_match('/^[a-zA-Z0-9 ]{2,}$/', $name) )
 if ( empty($username) || ! preg_match('/^[a-zA-Z0-9._-]{2,}$/', $username) )
   {
     $error = TRUE;
-    $_SESSION['message'] = "The username field is required, and it can contain only letters, numbers, dots, underscores, or dashes";
+    $_SESSION['message'] = "The username field is required, and it can contain only letters, numbers, dots, underscores, and dashes";
   }
 
 if ( empty($email) || ! preg_match('/^.+@.+$/', $email) )
@@ -54,7 +54,7 @@ $db = new SQLite3('user.db');  // open the DB
   .$username  ."', '"
   .$email  ."', '"
   .$hash  ."', '"
-  .$zipcode ."') '";  //save inserted values
+  .$zipcode ."')";  //save inserted values
    
 
   $result = $db->exec($command); // execute the command
