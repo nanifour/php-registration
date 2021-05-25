@@ -3,13 +3,11 @@ create table [user]
 (
     
     name varchar(35), 
-    nickname varchar(25), 
     email varchar(320), 
-    userid varchar(25), 
+    username varchar(25), 
     password varchar(255), 
     zipcode int, 
-    phone int,
-    PRIMARY KEY (userid)
+    PRIMARY KEY (username)
 );
 
 create table [event] 
