@@ -19,7 +19,10 @@
 
 
 <style>
-
+.add-event{
+  display: flex;
+  
+}
 p{
      vertical-align: top;
      text-align: left;
@@ -57,7 +60,7 @@ tr{
     <!-- Included Files -->
     <?php include("header.php"); ?>
 
-
+<div class="event-container">
     <h1 style="text-align:center;"> Events </h1>
 <table>
 <row><th>  Event Name   </th><th>  Sponsor   </th><th>  Description   </th><th  >Date   </th><th>  time   </th></row>
@@ -85,14 +88,16 @@ $db->close();
 
 <form action="new_event.php" method="get" >
 <div class="add-event">
+  <div class="event-container">
      <p style="text-align:center;"> ONLY Royal Pups members are to add to the event calender</p>
      <button type="submit" class="btn" name="event"> Add An Event </button>
+  </div>  
 </div>
 </form>
 
 
  <!-- &nbsp; //non breaking space-->
-
+</div>
   
 </body>
 
