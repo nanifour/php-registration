@@ -1,10 +1,10 @@
 
 create table [user] 
 (
-    
+
     name varchar(35), 
+    username varchar(25),
     email varchar(320), 
-    username varchar(25), 
     password varchar(255), 
     zipcode int, 
     PRIMARY KEY (username)
