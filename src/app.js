@@ -15,7 +15,7 @@ function showPasswords() {
 	var x = document.getElementById("password1");
 	var y = document.getElementById("password2");
 
-  if (x.type === "password" && y.type == "password" ) {
+  if (x.type === "password" && y.type === "password" ) {
     x.type = "text";
 	y.type = "text";
   } 
@@ -31,7 +31,7 @@ function checkPassword(){
 	var x = document.getElementById("password1");
 	var y = document.getElementById("password2");
 
-	if (x.value == y.value){
+	if (x.value === y.value){
 		x.setCustomValidity('');
 	}
 	else{
