@@ -24,7 +24,7 @@
           //show session message
           //$userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : 'Guest';
           if(isset($_SESSION['userid'])){
-            echo "<h3>Hello Royal Pups Member 👋🏽</h3>";
+            echo "<h3>Hello Royal Pups Member 🐶</h3>";
           }
           else{
             echo "<h3> Hello Guest 👋🏽</h3>";
