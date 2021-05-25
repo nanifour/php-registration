@@ -39,8 +39,8 @@ form {
     <?php include("header.php"); ?>
 
 <?php
-
-if(!isset($_SESSION['username'])){
+//check if user is logged in before adding event
+if(empty($_SESSION['logged_in']) || ! $_SESSION['logged_in']){
    header("Location: index.php");
    exit;
 }
