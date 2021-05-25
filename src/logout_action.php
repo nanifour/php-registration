@@ -3,10 +3,10 @@
 session_start();
 
 // Get parameters from form 
-$userid = $_POST['userid']; 
+$username = $_POST['username']; 
 
 
-unset($_SESSION['userid']);
+unset($_SESSION['username']);
 unset($_SESSION['logged_in']);			// clear the session
 $_SESSION['message'] = "You are now logged out";
 header("Location: index.php");			// redirect to home page
