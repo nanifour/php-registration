@@ -60,6 +60,16 @@ tr{
     <!-- Included Files -->
     <?php include("header.php"); ?>
 
+    <?php  
+//show session message
+if (isset($_SESSION['message'])){
+	echo  $_SESSION['message']; 
+  }
+//clear session message after
+  unset($_SESSION['message']);
+
+?>
+
 <div class="event-container">
     <h1 style="text-align:center;"> Events </h1>
 <table>

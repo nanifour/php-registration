@@ -23,7 +23,7 @@
           //check if logged in
           //show session message
           //$userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : 'Guest';
-          if(isset($_SESSION['userid'])){
+          if(isset($_SESSION['username'])){
             echo "<h3>Hello Royal Pups Member 🐶</h3>";
           }
           else{
@@ -43,15 +43,6 @@
 
   </div>
   
-  <?php  
-//show session message
-if (isset($_SESSION['message'])){
-	echo  $_SESSION['message']; 
-  }
-//clear session message after
-  unset($_SESSION['message']);
-
-?>
 
 </body>
 

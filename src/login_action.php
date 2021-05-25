@@ -36,7 +36,7 @@ $db = new SQLite3('user.db');  // open the DB
       $valid = password_verify($pwdone, $hash);  //check hash password
     }
     if ($username != "" && $valid){ //if user is not NULL and password is valid--login
-      $_SESSION['username'] ;
+      $_SESSION['username'] = $username;
       $_SESSION['logged_in'] = TRUE;
       $_SESSION['message'] = "You are now logged in! " . " Welcome, " .$username. "!" ;
     } 
