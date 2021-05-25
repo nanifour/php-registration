@@ -6,11 +6,11 @@ session_start();
 $username = $_POST['username']; 
 $pwdone = $_POST['password'];
 
-//validate username and password
-if ( empty($username) || ! preg_match('/^[a-zA-Z0-9 ]{2,}$/', $username ))
+//validate userid and password
+if ( empty($userid) || ! preg_match('/^[a-zA-Z0-9 ]{2,}$/', $userid ))
 {
   $error = TRUE;
-  $_SESSION['message'] = "A user name is required.";
+  $_SESSION['message'] = "A username is required.";
 
 }
 
@@ -35,8 +35,8 @@ $db = new SQLite3('user.db');  // open the DB
       $hash = $row['password'];
       $valid = password_verify($pwdone, $hash);  //check hash password
     }
-    if ($username != "" && $valid){ //if id not NULL --login
-      $_SESSION['username'] = username;
+    if ($username != "" && $valid){ //if user is not NULL and password is valid--login
+      $_SESSION['username'] ;
       $_SESSION['logged_in'] = TRUE;
       $_SESSION['message'] = "You are now logged in! " . " Welcome, " .$username. "!" ;
     } 
