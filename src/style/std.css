@@ -19,7 +19,16 @@ Global Styles
   font-family: 'Montserrat', sans-serif;
 }
 
-
+.btn {
+  padding: 13px;
+  font-size: 15px;
+  color: white;
+  margin: 10px 0px 0px 195px;
+  background: #76178D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /*
 =============== 
@@ -47,7 +56,7 @@ Menu Style
     text-decoration: none;
 }
 
-h3{
+.menu-container h3{
   padding-left: 10px;
   display: flex;
   align-items: center;
@@ -85,8 +94,10 @@ Login / Index
 Sign Up / Registration
 =======================
 */
-
-
+.signUp-container{
+  padding-top: 19vh;
+  text-align: center;
+}
 
 
 /*
