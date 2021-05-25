@@ -8,7 +8,7 @@ session_start();
 
 // Get parameters from form 
   $name = $_POST['name'];
-  $nusername = $_POST['username'];
+  $username = $_POST['username'];
   $email = $_POST['email'];
   $pwdone = $_POST['password_1'];
   $pwdtwo = $_POST['password_2'];
@@ -22,7 +22,7 @@ if ( empty($name) || ! preg_match('/^[a-zA-Z0-9 ]{2,}$/', $name) )
     $_SESSION['message'] = "The name field is required, and can contain only letters, numbers, and spaces.";
   }
 
-if ( empty($username) || ! preg_match('/^[a-zA-Z0-9._-]$/', $username) )
+if ( empty($username) || ! preg_match('/^[a-zA-Z0-9._-]{2,}$/', $username) )
   {
     $error = TRUE;
     $_SESSION['message'] = "The username field is required, and it can contain only letters, numbers, dots, underscores, or dashes";
@@ -51,10 +51,10 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 $db = new SQLite3('user.db');  // open the DB
 
   $command = "insert into user values('".$name  ."', '"
-  .$username  ."',  '"
-  .$email  ."','"
+  .$username  ."', '"
+  .$email  ."', '"
   .$hash  ."', '"
-  .$zipcode."')";  //save inserted values
+  .$zipcode ."') '";  //save inserted values
    
 
   $result = $db->exec($command); // execute the command
@@ -77,7 +77,7 @@ $db = new SQLite3('user.db');  // open the DB
 //check if message is set 
 if (isset($_SESSION['message'])){
 //redirect with message
-  header("location: registration.php");
+  header("location: header.php");
   exit;
   //echo $_SESSION['message']; 
 }
