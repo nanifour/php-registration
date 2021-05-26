@@ -40,6 +40,7 @@ form {
 <?php
 //check if user is logged in before adding event
 if(empty($_SESSION['logged_in']) || ! $_SESSION['logged_in']){
+  //direct user to log in page if not logged in
    header("Location: index.php");
    exit;
 }
@@ -49,19 +50,19 @@ if(empty($_SESSION['logged_in']) || ! $_SESSION['logged_in']){
 
 <form method="post" action="new_event_action.php">
   	<div class="input-group">
-  	  <label> Event Name: </label>
+  	  <label> Event Name </label>
   	  <input type="text" placeholder="Name of the event.." name="event_name" required/>
   	</div>
     <div class="input-group">
-  	  <label> Sponsor: </label>
+  	  <label> Sponsor </label>
   	  <input type="text" placeholder="Sponsor of the event.."  name="sponsor" required/>
   	</div> 
   	<div class="input-group">
-  	  <label> Description: </label>
+  	  <label> Description </label>
       <input type="text" name="description" placeholder="Enter short description of event..." required>
   	</div>
       <div class="input-group">
-  	  <label> Date: </label>
+  	  <label> Date </label>
       <input type="date" name="date1" min=
         <?php
           echo date('Y-m-d');
@@ -69,7 +70,7 @@ if(empty($_SESSION['logged_in']) || ! $_SESSION['logged_in']){
       >
   	</div>
     <div class="input-group">
-  	  <label> Time: </label>
+  	  <label> Time </label>
   	  <input type="time" name="time1">
   	</div>  
 
