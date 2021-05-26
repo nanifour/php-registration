@@ -44,8 +44,8 @@
       <div class="nav-right">
           <a href="events.php"> Events </a> 
           <a href="index.php"> Log In </a> 
-          <a href="logout_action.php"> Log Out </a> 
           <a href="registration.php"> Sign Up </a> 
+          <a href="logout_action.php"> Log Out </a> 
       </div>
 
 
