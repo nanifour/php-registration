@@ -32,7 +32,7 @@
                       //boostrap alert
                       ?>
                         <div class="alert alert-primary" role="alert">
-                          <strong>Hey!</strong> <?php echo  $_SESSION['message'];?>
+                          <strong>Thank You! </strong> <?php echo  $_SESSION['message'];?>
                         </div>
                       <?php
                         //clear session message after
