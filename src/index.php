@@ -6,9 +6,6 @@
 <head>
 	<title> Royal Pups FC </title>
     <meta charset = "UTF-8" />
-
-
-
 	<script src="app.js"></script>
 
 </head>
@@ -16,7 +13,6 @@
 <body>   
 <!-- Included Files -->
 <?php include("header.php"); ?>
-
 
 
   <div class="background">
@@ -29,7 +25,7 @@
 			//boostrap alert
 				?>
 					<div class="alert alert-primary" role="alert">
-						<strong>Hey!</strong> <?php echo  $_SESSION['message'];?>
+						<strong>Hey, </strong> <?php echo  $_SESSION['message'];?>
 					</div>
 					<?php
 					//clear session message after
@@ -50,7 +46,7 @@
 
 			<div class="form-container">
 				<div class="text-header">
-					<h4> Sign In as a Royal Pups member </h4>
+					<h4> Sign In as a Royal Pups member ⚽️</h4>
 				</div>			
 							
 					<form name="loginForm" method="POST" action="login_action.php">
