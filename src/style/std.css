@@ -49,9 +49,9 @@ Menu Style
 
 .nav-right a{
     font-weight: 600;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 0 10px;
-    flex-wrap: nowrap;
     color: #000;
     text-decoration: none;
 }
@@ -60,7 +60,7 @@ Menu Style
   padding-left: 10px;
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
   color: #000;
 }
@@ -88,6 +88,8 @@ Login / Index
   padding-top: 19vh;
   text-align: center;
 }
+
+
 
 /*
 ======================= 
@@ -119,23 +121,5 @@ New Event
 
 
 
-/*
-=============== 
-Flash Message
-===============
-*/
-.flash-message{
-  background-color: #b6f2ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 3rem;
-  width: 30rem;
-  margin-bottom: 15px;
-}
 
-.flash-text{
-  color: #000;
-
-}
 
