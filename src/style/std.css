@@ -105,7 +105,7 @@ form header
 .header{
   display: flex;
   margin: 13px 0 10px 0;
-  align-items: center
+  align-items: center;
 }
 
 .circle-container{
@@ -166,6 +166,26 @@ Event
   padding-top: 15vh;
   text-align: center;
 }
+
+.event-container .content{
+  margin-top: 3vh;
+}
+
+.event-container h2, p{
+  text-align: center;
+}
+
+.event-container p{
+  color: #f10000;
+  font-weight: 500;
+}
+
+.event-line{
+  background-color: #002240;
+  width: 1150px;
+  height: 5px;
+} 
+
 
 
 /*
