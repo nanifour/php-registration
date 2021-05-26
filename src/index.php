@@ -21,26 +21,34 @@
 
   <div class="background">
 
+	<div class="content">
+  		<?php  
+			//show session message
+			if (isset($_SESSION['message'])){
+
+			//boostrap alert
+				?>
+					<div class="alert alert-primary" role="alert">
+						<strong>Hey!</strong> <?php echo  $_SESSION['message'];?>
+					</div>
+					<?php
+					//clear session message after
+					unset($_SESSION['message']);
+			}
+		?>
 
 		<div class="item-container">
 
+			<div class="header">
+				<div class="circle-container">
+					<div class="circle-one"></div>
+					<div class="circle-two"></div>
+					<div class="circle-three"></div>
+				</div>
+				<div class="line"></div>
+			</div>
 
-						<?php  
-							//show session message
-							if (isset($_SESSION['message'])){
-
-								//boostrap alert
-								?>
-								<div class="alert alert-primary" role="alert">
-									<strong>Hey!</strong> <?php echo  $_SESSION['message'];?>
-								</div>
-								<?php
-								//clear session message after
-								unset($_SESSION['message']);
-							}
-						?>
-
-
+			<div class="form-container">
 				<div class="text-header">
 					<h4> Sign In as a Royal Pups member </h4>
 				</div>			
@@ -65,8 +73,12 @@
 							<a href="registration.php">Sign Up</a>
 						</p>
 				</form>
-		</div>
 
+				</div>
+
+			</div>
+			
+		</div>
   </div>
   
 </body>
