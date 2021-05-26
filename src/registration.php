@@ -14,23 +14,25 @@
 </head>
 
 <body>	
-
-	<div class="flash-container">
-		<div class="flash-message">
-			<div class="flash-text">
-				<?php  
-					//show session message
-					if (isset($_SESSION['message'])){
-						echo  $_SESSION['message']; 
-					}
-					//clear session message after
-					unset($_SESSION['message']);
-				?>
-			</div>
-		</div>
-	</div>				
+			
 
 	<div class="signUp-container">
+
+			<?php  
+				//show session message
+				if (isset($_SESSION['message'])){
+
+					//boostrap alert
+					?>
+						<div class="alert alert-primary" role="alert">
+							<strong>Hey!</strong> <?php echo  $_SESSION['message'];?>
+						</div>
+					<?php
+						//clear session message after
+						unset($_SESSION['message']);
+				}
+			?>
+
 
   		<div class="title">
 			<h3> Sign up to become a fan member for more information, free gear, and more from your favorive soccer club! </h3>
