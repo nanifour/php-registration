@@ -38,12 +38,12 @@ $db = new SQLite3('user.db');  // open the DB
     if ($username != "" && $valid){ //if user is not NULL and password is valid--login
       $_SESSION['username'] = $username;
       $_SESSION['logged_in'] = TRUE;
-      $_SESSION['message'] = " You are now logged in! " . "  Welcome, " .$username. "!" ;
+      $_SESSION['message'] = " you are now logged in!  " . "  Welcome, " .$username. ". " . " You can now add an event!" ;
     } 
     else {  //if not found, invalid information
       unset($_SESSION['username']);
       unset($_SESSION['logged_in']);
-      $_SESSION['message'] = "You are not signed in yet, Invalid information entered";
+      $_SESSION['message'] = "You are NOT signed in yet, Invalid information entered";
     }
     
 $db->close();
