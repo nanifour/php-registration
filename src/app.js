@@ -15,13 +15,13 @@ function showPasswords() {
 	var x = document.getElementById("password1");
 	var y = document.getElementById("password2");
 
-  if (x.type === "password" && y.type === "password" ) {
+  if (x.type === "password1" && y.type === "password2" ) {
     x.type = "text";
 	y.type = "text";
   } 
   else {
-    x.type = "password";
-	y.type = "password";
+    x.type = "password1";
+	y.type = "password2";
   }
 }
 
