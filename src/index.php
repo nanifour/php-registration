@@ -1,3 +1,6 @@
+<?php
+//$pdo = new PDO('sqlite:makedb.sql');
+?> 
 
 <!DOCTYPE html>
 
