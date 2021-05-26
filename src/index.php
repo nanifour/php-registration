@@ -41,27 +41,28 @@
 						?>
 
 
-			
-				<h4> Sign In as a Royal Pups member </h4>
-
+				<div class="text-header">
+					<h4> Sign In as a Royal Pups member </h4>
+				</div>			
+							
 					<form name="loginForm" method="POST" action="login_action.php">
-						<div class="form-floating">
-							<label>Username </label>
-								<input type="text" placeholder="username" name="username" required/>
+						<div class="form-floating mb-3">
+								<input type="text" class="form-control" id="username" placeholder="username" name="username" required/>
+							<label for="floatingInput">Username</label>
 						</div>
-						<div class="form-floating">
-							<label>Password </label>
-								<input type="password" placeholder="password" id="password" name="password" required/>
-										<input type="checkbox" onclick="showPassword()"/> Show Password
+						<div class="form-floating mb-3">
+								<input type="password" class="form-control" id="password" placeholder="password" name="password" required/>
+										<input type="checkbox" class="checkbox" onclick="showPassword()"/> Show Password
+							<label for="floatingInput">Password</label>
 						</div>
-					
+
 						<div class="form-floating">
-							<button type="submit" class="btn" name="login"> Log In </button>
+							<button type="submit" class="btn btn-outline-primary" name="login"> Log In </button>
 						</div>
 
 
-						<p style=>Not a Royal Pups fan member yet? 
-							<a href="registration.php">Sign Me Up</a>
+						<p style=>Not a Royal Pups member yet? 
+							<a href="registration.php">Sign Up</a>
 						</p>
 				</form>
 		</div>
