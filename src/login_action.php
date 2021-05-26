@@ -38,7 +38,7 @@ $db = new SQLite3('user.db');  // open the DB
     if ($username != "" && $valid){ //if user is not NULL and password is valid--login
       $_SESSION['username'] = $username;
       $_SESSION['logged_in'] = TRUE;
-      $_SESSION['message'] = "You are now logged in! " . " Welcome, " .$username. "!" ;
+      $_SESSION['message'] = " You are now logged in! " . " Welcome, " .$username. "!" ;
     } 
     else {  //if not found, invalid information
       unset($_SESSION['username']);
