@@ -78,6 +78,8 @@ Login / Index
   margin-top: 3vh;
   border: #002240 solid;
   border-radius: 20px;
+  background-color: #edf2f4;
+
 }
 
 .form-container{
@@ -169,6 +171,7 @@ Event
 
 .event-container .content{
   margin-top: 3vh;
+  margin-bottom: 5vh;
 }
 
 .event-container h2, p{
@@ -186,6 +189,10 @@ Event
   height: 5px;
 } 
 
+.dt-format{
+    display: inline-block;
+
+}
 
 
 /*
