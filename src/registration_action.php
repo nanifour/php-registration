@@ -70,7 +70,7 @@ $db = new SQLite3('user.db');  // open the DB
 
 // Welcome message in session if the parameters are valid or there are no errors
   if(! $error) {
-    $_SESSION['message'] = "Welcome, " . $name . ". " . "You are officially a Royal Pups Member! " . "You are now signed up for our updates, offers, and fan exclusives! ";
+    $_SESSION['message'] = "Welcome, " . $name . ". " . "You are officially a Royal Pups Member! " . "Go to our login page to login for our updates, offers, and fan exclusives! ";
   }
  
 

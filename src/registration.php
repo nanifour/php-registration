@@ -14,16 +14,22 @@
 
 </head>
 
-<body>
+<body>	
 
-<?php  
-//show session message
-if (isset($_SESSION['message'])){
-	echo  $_SESSION['message']; 
-  }
-//clear session message after
-  unset($_SESSION['message']);
-?>	
+	<div class="flash-container">
+		<div class="flash-message">
+			<div class="flash-text">
+				<?php  
+					//show session message
+					if (isset($_SESSION['message'])){
+						echo  $_SESSION['message']; 
+					}
+					//clear session message after
+					unset($_SESSION['message']);
+				?>
+			</div>
+		</div>
+	</div>				
 
 	<div class="signUp-container">
 
@@ -71,6 +77,8 @@ if (isset($_SESSION['message'])){
 			</div>
 		
 		</form>
+
+
 	</div>
 
 

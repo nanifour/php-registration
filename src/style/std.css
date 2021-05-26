@@ -84,8 +84,8 @@ Login / Index
   align-items: center; 
 }
 
-.textItems {
-  padding-top: 30vh;
+.item-container{
+  padding-top: 19vh;
   text-align: center;
 }
 
@@ -111,4 +111,31 @@ Event
 }
 
 
+/*
+=============== 
+New Event
+===============
+*/
+
+
+
+/*
+=============== 
+Flash Message
+===============
+*/
+.flash-message{
+  background-color: #b6f2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 30rem;
+  margin-bottom: 15px;
+}
+
+.flash-text{
+  color: #000;
+
+}
 
