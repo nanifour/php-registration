@@ -65,7 +65,7 @@ $db->close();
 
 // Success in session if event added
 if(! $error) {
-  $_SESSION['message'] = "Event  " . $ename . ". " . "Successfully added";
+  $_SESSION['message'] = "Event:  " . $ename . " " . " was successfully added.";
 }
 
 //check if message is set 
