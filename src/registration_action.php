@@ -70,14 +70,14 @@ $db = new SQLite3('user.db');  // open the DB
 
 // Welcome message in session if the parameters are valid or there are no errors
   if(! $error) {
-    $_SESSION['message'] = "Welcome, " . $name . ". " . "You are officially a Royal Pups Member! " . "Go to our login page to login for our updates, offers, and fan exclusives! ";
+    $_SESSION['message'] = " " . $name . ". " . "You are now a member! " . "Login now on the login page";
   }
  
 
 //check if message is set 
 if (isset($_SESSION['message'])){
 //redirect with message
-  header("location: header.php");
+  header("location: index.php");
   exit;
   //echo $_SESSION['message']; 
 }
