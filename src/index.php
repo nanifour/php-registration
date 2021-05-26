@@ -6,7 +6,7 @@
 <head>
 	<title> Royal Pups FC </title>
     <meta charset = "UTF-8" />
-	<link rel="stylesheet" type="text/css" href="src/style/std.css">
+
 
 
 	<script src="app.js"></script>

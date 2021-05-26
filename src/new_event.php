@@ -8,7 +8,6 @@
 
 <head>
 	<title> Royal Pups FC </title>
-  <link rel="stylesheet" type="text/css" href="style/std.css">
   <meta charset = "UTF-8" />
 
   <style>
