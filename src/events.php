@@ -59,54 +59,62 @@ tr{
     <!-- Included Files -->
     <?php include("header.php"); ?>
 
-    <?php  
-//show session message
-if (isset($_SESSION['message'])){
-	echo  $_SESSION['message']; 
-  }
-//clear session message after
-  unset($_SESSION['message']);
 
-?>
-
-<div class="event-container">
-    <h1 style="text-align:center;"> Events </h1>
-<table>
-<row><th>  Event Name   </th><th>  Sponsor   </th><th>  Description   </th><th  >Date   </th><th>  time   </th></row>
-
-<?php
-//Show all Events in table
-$db = new SQLite3('event.db');  // open the DB
-
-$query = 'select * from event'; // get all pets
-$result = $db->query($query); // execute the query
-
-  
-  while ($event = $result->fetchArray(SQLITE3_ASSOC) ) {  // get next row
-    echo '<tr><td>'. $event['eventName']. '</td>
-          <td>'. $event['sponsor'].'</td>
-          <td>'. $event['description']. '</td>
-          <td>'. $event['eventDate'].'</td>
-          <td>'. $event['eventTime']. '</td>
-          </tr>';
-  }
-$db->close();
-?>
-</table>  
-
-
-<form action="new_event.php" method="get" >
-<div class="add-event">
   <div class="event-container">
-     <p style="text-align:center;"> ONLY Royal Pups members are to add to the event calender</p>
-     <button type="submit" class="btn" name="event"> Add An Event </button>
-  </div>  
-</div>
-</form>
+
+    <?php  
+				//show session message
+				if (isset($_SESSION['message'])){
+
+					//boostrap alert
+					?>
+						<div class="alert alert-primary" role="alert">
+							<strong>Hey!</strong> <?php echo  $_SESSION['message'];?>
+						</div>
+					<?php
+						//clear session message after
+						unset($_SESSION['message']);
+				}
+		?>
+
+      <h1 style="text-align:center;"> Events </h1>
+
+      <table>
+        <row><th>  Event Name   </th><th>  Sponsor   </th><th>  Description   </th><th  >Date   </th><th>  time   </th></row>
+
+          <?php
+              //Show all Events in table
+              $db = new SQLite3('event.db');  // open the DB
+
+              $query = 'select * from event'; // get all pets
+              $result = $db->query($query); // execute the query
+
+        
+              while ($event = $result->fetchArray(SQLITE3_ASSOC) ) {  // get next row
+                echo '<tr><td>'. $event['eventName']. '</td>
+                      <td>'. $event['sponsor'].'</td>
+                      <td>'. $event['description']. '</td>
+                      <td>'. $event['eventDate'].'</td>
+                      <td>'. $event['eventTime']. '</td>
+                      </tr>';
+              }
+            $db->close();
+          ?>
+      </table>  
 
 
- <!-- &nbsp; //non breaking space-->
-</div>
+      <form action="new_event.php" method="get" >
+      <div class="add-event">
+        <div class="event-container">
+          <p style="text-align:center;"> ONLY Royal Pups members are to add to the event calender</p>
+          <button type="submit" class="btn" name="event"> Add An Event </button>
+        </div>  
+      </div>
+      </form>
+
+
+      <!-- &nbsp; //non breaking space-->
+    </div>
   
 </body>
 
