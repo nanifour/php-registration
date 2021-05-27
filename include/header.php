@@ -6,7 +6,8 @@
 
 <head>
   <title> Royal Pups FC </title> 
-  <link rel="stylesheet" type="text/css" href="style/std.css">
+  <link rel="stylesheet" type="text/css" href="include/std.css">
+  <script src="include/app.js"></script>
   <meta charset = "UTF-8" />
 
     <!-- Bootstrap CSS -->

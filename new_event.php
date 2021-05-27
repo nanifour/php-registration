@@ -14,7 +14,7 @@
 
 <body>
     <!-- Included Files -->
-    <?php include("header.php"); ?>
+    <?php include("./include/header.php"); ?>
 
   <div class="background">
 

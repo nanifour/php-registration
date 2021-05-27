@@ -1,5 +1,5 @@
     <!-- Included Files -->
-    <?php include("header.php"); ?>
+    <?php include("./include/header.php"); ?>
 
 <!DOCTYPE html>
 

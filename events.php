@@ -19,7 +19,7 @@
 
 <body>
     <!-- Included Files -->
-    <?php include("header.php"); ?>
+    <?php include("./include/header.php"); ?>
 
 <div class="background">
   <div class="event-container">
@@ -73,7 +73,7 @@
                     <tbody>
                         <?php
                             //Show all Events in table
-                            $db = new SQLite3('event.db');  // open the DB
+                            $db = new SQLite3('./db/event.db');  // open the DB
 
                             $query = 'select * from event'; // get all pets
                             $result = $db->query($query); // execute the query

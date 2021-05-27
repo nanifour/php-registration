@@ -45,7 +45,7 @@ if ( empty($time))
 }
 
 //save to database
-$db = new SQLite3('event.db');  // open the DB
+$db = new SQLite3('./db/event.db');  // open the DB
 
   $command = "insert into event values('".$ename  ."', '"
   .$sponsor   ."', '"

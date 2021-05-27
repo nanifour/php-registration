@@ -22,7 +22,7 @@ if ( empty($pwdone))
 }
 
 //Retrieve values from database
-$db = new SQLite3('user.db');  // open the DB
+$db = new SQLite3('./db/user.db');  // open the DB
 
     $command = "select password from user where username='" .$username ."'"; 
     $query = 'select * from user'; // get all pets

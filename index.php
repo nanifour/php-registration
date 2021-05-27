@@ -9,13 +9,12 @@
 <head>
 	<title> Royal Pups FC </title>
     <meta charset = "UTF-8" />
-	<script src="app.js"></script>
 
 </head>
 
 <body>   
 <!-- Included Files -->
-<?php include("header.php"); ?>
+<?php include("./include/header.php"); ?>
 
 
   <div class="background">
