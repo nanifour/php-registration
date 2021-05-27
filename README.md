@@ -7,6 +7,10 @@ Php login and registration forms. Logout by resetting the session. Members are o
 
 ![screenshot](images/guest-home.png)
 
+![screenshot](images/member-home.png)
+
+![screenshot](images/member-event.png)
+
 ## Technologies used
 - PHP
 - HTML
