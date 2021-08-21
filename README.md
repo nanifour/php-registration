@@ -3,15 +3,25 @@
 
 ![](https://img.shields.io/github/languages/top/nanifour/php-registration?style=for-the-badge)        [![Demo](https://img.shields.io/badge/Demo-informational?style=for-the-badge&logo=github)](https://royal-pup-php.herokuapp.com/)
 
-A login and signup form built with PHP, HTML, CSS, and SQLite. This project contains two data entry forms, one for registrations and one for events. Only users who are logged in are able to add events. The data that is entered into both forms are saved to a database (SQLite). 
+A login and signup form built with PHP, HTML, CSS, Bootstrap 5 and SQLite. This project contains two data entry forms, one for registrations and one for events. Only users who are logged in are able to add events. The data that is entered into both forms are saved to a database (SQLite). 
 
-The passwords that are entered into the registration form are hashed using php before being saved to the database. These pages also look in the session for messages, and, if found, displays them at the top of the page, above the form, and delete them from the session when done. When a user logs in, the project searches through the database to find the corresponding username and hashed password.
+Passowrds are hashed using php. After a successful login, registration, or logout, the user is sent a session meesage to their screen using PHP and Bootstrap 5. 
+These pages also look in the session for messages, and, if found, displays them at the top of the page, above the form, and delete them from the session when done. 
 
     The website was deployed on a server cloud (Heroku & CS Department linux servers).
 
+## 2 Features
+- Sign up for an account (informations saved to database)
+- Log in 
+- Event calender
+- Add an event (users ONLY)
+- Stores passwords in DB as hashes
+- Easy logout via logout.php
+- Check session for messages regarding logged in/out status
 
 
-## 2 Technologies used
+
+## 3 Technologies used
 - PHP
 - HTML
 - CSS
@@ -19,7 +29,7 @@ The passwords that are entered into the registration form are hashed using php b
 - SQLite for database 
 
 
-## 3 Screenshots
+## 4 Screenshots
 >Registration/Sign up
 ![screenshot](images/signup.png)
 
