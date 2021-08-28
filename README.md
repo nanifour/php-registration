@@ -19,8 +19,6 @@ These pages also look in the session for messages, and, if found, displays them 
 - Easy logout via logout.php
 - Check session for messages regarding logged in/out status
 
-
-
 ## 3 Technologies used
 - PHP
 - HTML
@@ -28,8 +26,25 @@ These pages also look in the session for messages, and, if found, displays them 
 - Boostrap 5
 - SQLite for database 
 
+## 4 Files
+- index.php
+> This is the homepage. Thee user can login through this page. After successful login, the user is sent an message to alert the user.
+- login_action.php
+- logout_action.php
+- header.php
+> This file contains the left and right menu. The left menu shows if the user is logged in.  The message "Hello Guest" or "Hello Royal Pups Member" is displayed depending on the user's session information. 
+- registration.php
+> This is the sign upn form where the user can register for an account. 
 
-## 4 Screenshots
+- registration_action.php
+> When the user submits the registration form, the information is saved to the database.
+- events.php
+- new_event.php
+- new_event_action.php
+
+
+
+## 5 Screenshots
 >Registration/Sign up
 ![screenshot](images/signup.png)
 
