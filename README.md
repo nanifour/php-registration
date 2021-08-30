@@ -27,27 +27,32 @@ These pages also look in the session for messages, and, if found, displays them 
 - SQLite for database 
 
 ## 4 Files
+For every page: The session is checked for messages, and, if found, displays the message/alert at the top of the page, above the form. After, the message is deleted them from the session.
+
 - index.php
-> This is the homepage. Thee user can login through this page. After successful login, the user is sent an message to alert the user.
+> This is the homepage. The user can login through this page. After a successful login, the user is sent an alert.
 
 - login_action.php
+> 
 
 - logout_action.php
-> The user's session information (id/username) and message is cleared
+> The user's session information (id/username) and message are cleared/reset.
 
 - header.php
 > This file contains the left and right menu. The left menu shows if the user is logged in.  The message "Hello Guest" or "Hello Royal Pups Member" is displayed depending on the user's session information. 
 
 - registration.php
-> This is the sign upn form where the user can register for an account. 
+> This is a sign up/registration form where the user can create an account with the following fields: full name, user name, password, and zipcode. The dual password fields are validated for a match using JavaScript before the form is submitted.
 
 - registration_action.php
-> When the user submits the registration form, the information is saved to the database.
+> When the user submits the registration form, the information is saved to the database. 
 
 - events.php
 > This page contains chronological list of events sponsored by the organization. Everyone is able to view the calender but only users are able to add events.
 
 - new_event.php
+> This a page where a user can add a new event. It accepts the following event information: event name, date and time, sponsor, and description. This page is accessible from a button on the events.php page
+
 - new_event_action.php
 
 
